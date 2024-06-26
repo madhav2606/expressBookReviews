@@ -15,8 +15,6 @@ const authenticatedUser = (username,password)=>{
   return matchingUsers.length > 0;
 }
 
-
-
 //only registered users can login
 regd_users.post("/login", (req,res) => {
   console.log("login: ", req.body);
